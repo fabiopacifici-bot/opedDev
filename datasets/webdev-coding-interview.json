@@ -1,0 +1,68 @@
+[
+  {
+    "category": "HTML",
+    "question": "Create an HTML structure for a web page that includes a navigation bar, a main content section, and a footer.",
+    "example_answer": "<nav>...</nav>\n<main>...</main>\n<footer>...</footer>",
+    "evaluation_criteria": [
+      { "aspect": "Semantic tags", "weight": 0.4 },
+      { "aspect": "Proper nesting", "weight": 0.3 },
+      { "aspect": "Indents and formatting", "weight": 0.3 }
+    ],
+    "correctness": "Content is semantically accurate, tags are properly nested, and formatting is clean."
+  },
+  {
+    "category": "CSS",
+    "question": "Write a CSS rule to center a div element both vertically and horizontally inside its parent.",
+    "example_answer": "div { display: flex; justify-content: center; align-items: center; height: 100vh; }",
+    "evaluation_criteria": [
+      { "aspect": "Correct properties used", "weight": 0.5 },
+      { "aspect": "Cross-browser compatibility", "weight": 0.2 },
+      { "aspect": "Simplicity", "weight": 0.3 }
+    ],
+    "correctness": "Flexbox properties are well utilized for centering."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write a function to reverse a string in JavaScript.",
+    "example_answer": "function reverseString(str) { return str.split('').reverse().join(''); }",
+    "evaluation_criteria": [
+      { "aspect": "Correctness", "weight": 0.6 },
+      { "aspect": "Efficiency", "weight": 0.2 },
+      { "aspect": "Readability", "weight": 0.2 }
+    ],
+    "correctness": "Code returns the reversed string and is optimal in performance."
+  },
+  {
+    "category": "Node.js/Express",
+    "question": "Create a basic Express.js server that listens on port 3000 and responds with 'Hello, World!' on the root route.",
+    "example_answer": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.send('Hello, World!'));\napp.listen(3000, () => console.log('Server started on port 3000'));",
+    "evaluation_criteria": [
+      { "aspect": "Server initialization", "weight": 0.5 },
+      { "aspect": "Route response accuracy", "weight": 0.3 },
+      { "aspect": "Code organization", "weight": 0.2 }
+    ],
+    "correctness": "Server and route are implemented correctly."
+  },
+  {
+    "category": "React",
+    "question": "Create a functional React component that renders a button and logs 'Button Clicked!' when clicked.",
+    "example_answer": "import React from 'react';\n\nconst ButtonComponent = () => {\n  const handleClick = () => console.log('Button Clicked!');\n  return <button onClick={handleClick}>Click Me</button>;\n};\n\nexport default ButtonComponent;",
+    "evaluation_criteria": [
+      { "aspect": "Event handling", "weight": 0.5 },
+      { "aspect": "Component structure", "weight": 0.3 },
+      { "aspect": "Code readability", "weight": 0.2 }
+    ],
+    "correctness": "Event handler and component structure are correctly defined."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a MySQL query to retrieve the names of all employees with a salary greater than 50,000 from a table called 'employees'.",
+    "example_answer": "SELECT name FROM employees WHERE salary > 50000;",
+    "evaluation_criteria": [
+      { "aspect": "Query syntax", "weight": 0.5 },
+      { "aspect": "Use of WHERE clause", "weight": 0.3 },
+      { "aspect": "Accuracy of column references", "weight": 0.2 }
+    ],
+    "correctness": "Query retrieves the correct data and follows proper SQL syntax."
+  }
+]
