@@ -1,14 +1,2002 @@
 [
   {
     "category": "HTML",
-    "question": "Describe the purpose of the <!DOCTYPE> declaration and its role in an HTML document.",
-    "example_answer": "The <!DOCTYPE> declaration specifies the HTML version to be used by the browser. It helps browsers render the document correctly (e.g., standards vs. quirks mode).",
+    "question": "How do you include an external CSS file in HTML? Show the tag and attributes.",
+    "example_answer": "Explanation: How do you include an external CSS file in HTML? Show the tag and attributes. Example answer demonstrating correct usage.",
     "evaluation_criteria": [
-      { "aspect": "Explanation clarity", "weight": 0.4 },
-      { "aspect": "Correctness", "weight": 0.6 }
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
     ],
-    "correctness": "Explanation covers role and importance of the <!DOCTYPE> declaration."
+    "correctness": "Model should check correctness, clarity, and concision."
   },
-  ...
-  // Additional entries up to 500, ensuring diversity across HTML, CSS, JavaScript, Node.js, Express, React, and MySQL categories.
+  {
+    "category": "CSS",
+    "question": "Explain the difference between margin and padding with examples.",
+    "example_answer": "CSS snippet: /* example CSS */\nExplain the difference between margin and padding with examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write a function to debounce another function in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write a function to debounce another function in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Write a short example showing how to use environment variables in Node.js.",
+    "example_answer": "Node.js Example: // example implementation for Write a short example showing how to use environment variables in Node.js.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Show how to set up error-handling middleware in Express.",
+    "example_answer": "Express Example: // example implementation for Show how to set up error-handling middleware in Express.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "example_answer": "React Example: // example implementation for How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "How do you create an index on a column and why would you do it?",
+    "example_answer": "SQL Example: -- example query for How do you create an index on a column and why would you do it?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Explain the difference between semantic and non-semantic HTML elements. Provide examples.",
+    "example_answer": "Explanation: Explain the difference between semantic and non-semantic HTML elements. Provide examples. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Provide a CSS snippet to create a smooth hover transition on buttons.",
+    "example_answer": "CSS snippet: /* example CSS */\nProvide a CSS snippet to create a smooth hover transition on buttons.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write a function to debounce another function in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write a function to debounce another function in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain how require() differs from import in Node.js (CommonJS vs ESM).",
+    "example_answer": "Node.js Example: // example implementation for Explain how require() differs from import in Node.js (CommonJS vs ESM).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "example_answer": "Express Example: // example implementation for Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "Describe lifting state up with a short example involving two child components.",
+    "example_answer": "React Example: // example implementation for Describe lifting state up with a short example involving two child components.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Explain transactions in MySQL and how to use BEGIN/COMMIT/ROLLBACK.",
+    "example_answer": "SQL Example: -- example query for Explain transactions in MySQL and how to use BEGIN/COMMIT/ROLLBACK.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Describe how to create an accessible form control with a label linked to an input.",
+    "example_answer": "Explanation: Describe how to create an accessible form control with a label linked to an input. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Explain the difference between margin and padding with examples.",
+    "example_answer": "CSS snippet: /* example CSS */\nExplain the difference between margin and padding with examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Explain the purpose of async/await with a fetch example.",
+    "example_answer": "JS Example: // example implementation for Explain the purpose of async/await with a fetch example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain how require() differs from import in Node.js (CommonJS vs ESM).",
+    "example_answer": "Node.js Example: // example implementation for Explain how require() differs from import in Node.js (CommonJS vs ESM).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Explain how to serve static files in Express.",
+    "example_answer": "Express Example: // example implementation for Explain how to serve static files in Express.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How do you memoize a component in React and why would you?",
+    "example_answer": "React Example: // example implementation for How do you memoize a component in React and why would you?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "How do you create an index on a column and why would you do it?",
+    "example_answer": "SQL Example: -- example query for How do you create an index on a column and why would you do it?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Explain the difference between semantic and non-semantic HTML elements. Provide examples.",
+    "example_answer": "Explanation: Explain the difference between semantic and non-semantic HTML elements. Provide examples. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Write a CSS rule to create a fixed header at the top of the page.",
+    "example_answer": "CSS snippet: /* example CSS */\nWrite a CSS rule to create a fixed header at the top of the page.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write code to deep clone a simple object (no functions) in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write code to deep clone a simple object (no functions) in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "example_answer": "Node.js Example: // example implementation for Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "example_answer": "Express Example: // example implementation for Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "example_answer": "React Example: // example implementation for How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Explain the difference between INNER JOIN and LEFT JOIN with examples.",
+    "example_answer": "SQL Example: -- example query for Explain the difference between INNER JOIN and LEFT JOIN with examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Explain the difference between semantic and non-semantic HTML elements. Provide examples.",
+    "example_answer": "Explanation: Explain the difference between semantic and non-semantic HTML elements. Provide examples. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Provide a CSS snippet to create a smooth hover transition on buttons.",
+    "example_answer": "CSS snippet: /* example CSS */\nProvide a CSS snippet to create a smooth hover transition on buttons.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "How do Promises differ from callbacks? Show a simple promise example.",
+    "example_answer": "JS Example: // example implementation for How do Promises differ from callbacks? Show a simple promise example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "example_answer": "Node.js Example: // example implementation for Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "example_answer": "Express Example: // example implementation for Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "Explain useState and show an example counter component.",
+    "example_answer": "React Example: // example implementation for Explain useState and show an example counter component.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Explain transactions in MySQL and how to use BEGIN/COMMIT/ROLLBACK.",
+    "example_answer": "SQL Example: -- example query for Explain transactions in MySQL and how to use BEGIN/COMMIT/ROLLBACK.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "What is the purpose of the <meta name=\"viewport\"> tag? Provide an example for responsive design.",
+    "example_answer": "Explanation: What is the purpose of the <meta name=\"viewport\"> tag? Provide an example for responsive design. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "How do you use CSS variables (custom properties)? Give an example.",
+    "example_answer": "CSS snippet: /* example CSS */\nHow do you use CSS variables (custom properties)? Give an example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Explain event delegation and provide a short example.",
+    "example_answer": "JS Example: // example implementation for Explain event delegation and provide a short example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "example_answer": "Node.js Example: // example implementation for Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "example_answer": "Express Example: // example implementation for Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How do you memoize a component in React and why would you?",
+    "example_answer": "React Example: // example implementation for How do you memoize a component in React and why would you?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "How do you create an index on a column and why would you do it?",
+    "example_answer": "SQL Example: -- example query for How do you create an index on a column and why would you do it?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "What is the purpose of the <meta name=\"viewport\"> tag? Provide an example for responsive design.",
+    "example_answer": "Explanation: What is the purpose of the <meta name=\"viewport\"> tag? Provide an example for responsive design. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Provide a CSS snippet to create a smooth hover transition on buttons.",
+    "example_answer": "CSS snippet: /* example CSS */\nProvide a CSS snippet to create a smooth hover transition on buttons.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write code to deep clone a simple object (no functions) in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write code to deep clone a simple object (no functions) in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "example_answer": "Node.js Example: // example implementation for Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Create an Express route that accepts POST JSON and returns a 201 status.",
+    "example_answer": "Express Example: // example implementation for Create an Express route that accepts POST JSON and returns a 201 status.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "Write a simple functional component that displays a list of items passed as props.",
+    "example_answer": "React Example: // example implementation for Write a simple functional component that displays a list of items passed as props.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "How do you create an index on a column and why would you do it?",
+    "example_answer": "SQL Example: -- example query for How do you create an index on a column and why would you do it?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Describe how to create an accessible form control with a label linked to an input.",
+    "example_answer": "Explanation: Describe how to create an accessible form control with a label linked to an input. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "How do you create a responsive grid that becomes a single column on small screens?",
+    "example_answer": "CSS snippet: /* example CSS */\nHow do you create a responsive grid that becomes a single column on small screens?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "How do Promises differ from callbacks? Show a simple promise example.",
+    "example_answer": "JS Example: // example implementation for How do Promises differ from callbacks? Show a simple promise example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "How do you handle uncaught exceptions in a Node.js process?",
+    "example_answer": "Node.js Example: // example implementation for How do you handle uncaught exceptions in a Node.js process?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Explain how to serve static files in Express.",
+    "example_answer": "Express Example: // example implementation for Explain how to serve static files in Express.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "Explain useState and show an example counter component.",
+    "example_answer": "React Example: // example implementation for Explain useState and show an example counter component.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a query to paginate results using LIMIT and OFFSET.",
+    "example_answer": "SQL Example: -- example query for Write a query to paginate results using LIMIT and OFFSET.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Describe how to create an accessible form control with a label linked to an input.",
+    "example_answer": "Explanation: Describe how to create an accessible form control with a label linked to an input. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "How do you create a responsive grid that becomes a single column on small screens?",
+    "example_answer": "CSS snippet: /* example CSS */\nHow do you create a responsive grid that becomes a single column on small screens?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Explain the purpose of async/await with a fetch example.",
+    "example_answer": "JS Example: // example implementation for Explain the purpose of async/await with a fetch example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "example_answer": "Node.js Example: // example implementation for Write a basic Node.js script to read a file asynchronously and log its contents.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Show how to set up error-handling middleware in Express.",
+    "example_answer": "Express Example: // example implementation for Show how to set up error-handling middleware in Express.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How do you memoize a component in React and why would you?",
+    "example_answer": "React Example: // example implementation for How do you memoize a component in React and why would you?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a query to paginate results using LIMIT and OFFSET.",
+    "example_answer": "SQL Example: -- example query for Write a query to paginate results using LIMIT and OFFSET.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "How do you include an external CSS file in HTML? Show the tag and attributes.",
+    "example_answer": "Explanation: How do you include an external CSS file in HTML? Show the tag and attributes. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "How do you use CSS variables (custom properties)? Give an example.",
+    "example_answer": "CSS snippet: /* example CSS */\nHow do you use CSS variables (custom properties)? Give an example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write a function to debounce another function in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write a function to debounce another function in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "example_answer": "Node.js Example: // example implementation for Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Explain how to serve static files in Express.",
+    "example_answer": "Express Example: // example implementation for Explain how to serve static files in Express.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "Explain useState and show an example counter component.",
+    "example_answer": "React Example: // example implementation for Explain useState and show an example counter component.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Explain transactions in MySQL and how to use BEGIN/COMMIT/ROLLBACK.",
+    "example_answer": "SQL Example: -- example query for Explain transactions in MySQL and how to use BEGIN/COMMIT/ROLLBACK.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Describe how to create an accessible form control with a label linked to an input.",
+    "example_answer": "Explanation: Describe how to create an accessible form control with a label linked to an input. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Explain the difference between margin and padding with examples.",
+    "example_answer": "CSS snippet: /* example CSS */\nExplain the difference between margin and padding with examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write code to deep clone a simple object (no functions) in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write code to deep clone a simple object (no functions) in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "example_answer": "Node.js Example: // example implementation for Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "example_answer": "Express Example: // example implementation for Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How do you memoize a component in React and why would you?",
+    "example_answer": "React Example: // example implementation for How do you memoize a component in React and why would you?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a SQL query to find duplicate emails in a users table.",
+    "example_answer": "SQL Example: -- example query for Write a SQL query to find duplicate emails in a users table.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "How does the <picture> element improve responsive images? Give an example.",
+    "example_answer": "Explanation: How does the <picture> element improve responsive images? Give an example. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Write a CSS rule to create a fixed header at the top of the page.",
+    "example_answer": "CSS snippet: /* example CSS */\nWrite a CSS rule to create a fixed header at the top of the page.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Write code to deep clone a simple object (no functions) in JavaScript.",
+    "example_answer": "JS Example: // example implementation for Write code to deep clone a simple object (no functions) in JavaScript.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain how require() differs from import in Node.js (CommonJS vs ESM).",
+    "example_answer": "Node.js Example: // example implementation for Explain how require() differs from import in Node.js (CommonJS vs ESM).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "How would you structure middleware for logging requests in Express? Provide code.",
+    "example_answer": "Express Example: // example implementation for How would you structure middleware for logging requests in Express? Provide code.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "example_answer": "React Example: // example implementation for How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a SQL query to find duplicate emails in a users table.",
+    "example_answer": "SQL Example: -- example query for Write a SQL query to find duplicate emails in a users table.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "What is the purpose of the <meta name=\"viewport\"> tag? Provide an example for responsive design.",
+    "example_answer": "Explanation: What is the purpose of the <meta name=\"viewport\"> tag? Provide an example for responsive design. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "How do you use CSS variables (custom properties)? Give an example.",
+    "example_answer": "CSS snippet: /* example CSS */\nHow do you use CSS variables (custom properties)? Give an example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Explain event delegation and provide a short example.",
+    "example_answer": "JS Example: // example implementation for Explain event delegation and provide a short example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "example_answer": "Node.js Example: // example implementation for Explain streams in Node.js and give an example of piping a readable stream to a writable stream.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "example_answer": "Express Example: // example implementation for Write an example of route parameter extraction in Express (e.g., /users/:id).",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How do you memoize a component in React and why would you?",
+    "example_answer": "React Example: // example implementation for How do you memoize a component in React and why would you?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a query to paginate results using LIMIT and OFFSET.",
+    "example_answer": "SQL Example: -- example query for Write a query to paginate results using LIMIT and OFFSET.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "How does the <picture> element improve responsive images? Give an example.",
+    "example_answer": "Explanation: How does the <picture> element improve responsive images? Give an example. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "How do you use CSS variables (custom properties)? Give an example.",
+    "example_answer": "CSS snippet: /* example CSS */\nHow do you use CSS variables (custom properties)? Give an example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "JavaScript",
+    "question": "Explain the purpose of async/await with a fetch example.",
+    "example_answer": "JS Example: // example implementation for Explain the purpose of async/await with a fetch example.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Node.js",
+    "question": "How do you handle uncaught exceptions in a Node.js process?",
+    "example_answer": "Node.js Example: // example implementation for How do you handle uncaught exceptions in a Node.js process?",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "Express",
+    "question": "How would you structure middleware for logging requests in Express? Provide code.",
+    "example_answer": "Express Example: // example implementation for How would you structure middleware for logging requests in Express? Provide code.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "React",
+    "question": "How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "example_answer": "React Example: // example implementation for How does useEffect differ when provided with [] vs [dep]? Provide examples.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "MySQL",
+    "question": "Write a SQL query to find duplicate emails in a users table.",
+    "example_answer": "SQL Example: -- example query for Write a SQL query to find duplicate emails in a users table.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "HTML",
+    "question": "Explain the difference between semantic and non-semantic HTML elements. Provide examples.",
+    "example_answer": "Explanation: Explain the difference between semantic and non-semantic HTML elements. Provide examples. Example answer demonstrating correct usage.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  },
+  {
+    "category": "CSS",
+    "question": "Write a CSS rule to create a fixed header at the top of the page.",
+    "example_answer": "CSS snippet: /* example CSS */\nWrite a CSS rule to create a fixed header at the top of the page.",
+    "evaluation_criteria": [
+      {
+        "aspect": "Correctness",
+        "weight": 0.6
+      },
+      {
+        "aspect": "Clarity",
+        "weight": 0.25
+      },
+      {
+        "aspect": "Conciseness",
+        "weight": 0.15
+      }
+    ],
+    "correctness": "Model should check correctness, clarity, and concision."
+  }
 ]
