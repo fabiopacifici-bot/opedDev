@@ -1,9 +1,13 @@
 # Training Script
 # Fine-tunes the Qwen-3 0.6B model for web development coding interview grading.
 
+import logging
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer
 from datasets import load_from_disk
 import os
+
+# ensure logging is configured so Trainer/transformers emit to stdout
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 
 def fine_tune_qwen3(dataset_path, model_name, output_dir):
     """Fine-tunes the Qwen-3 model."""
@@ -57,16 +61,32 @@ def fine_tune_qwen3(dataset_path, model_name, output_dir):
         tokenized_full['labels'] = labels
         return tokenized_full
 
-    tokenized_dataset = dataset.map(preprocess_function, batched=True, remove_columns=['prompt', 'completion'])
+    tokenized_dataset = dataset.map(preprocess_function, batched=True, remove_columns=['prompt', 'completion'], load_from_cache_file=False)
 
-    # Define training parameters (minimal for compatibility)
+    # Define training parameters (use env vars or defaults)
+    learning_rate = float(os.environ.get('LEARNING_RATE', 2e-5))
+    per_device_train_batch_size = int(os.environ.get('PER_DEVICE_TRAIN_BATCH_SIZE', 2))
+    per_device_eval_batch_size = int(os.environ.get('PER_DEVICE_EVAL_BATCH_SIZE', 2))
+    num_train_epochs = int(os.environ.get('NUM_TRAIN_EPOCHS', 3))
+    logging_strategy = os.environ.get('LOGGING_STRATEGY', 'epoch')
+    eval_strategy = os.environ.get('EVAL_STRATEGY', 'epoch')
+    save_strategy = os.environ.get('SAVE_STRATEGY', 'epoch')
+    save_total_limit = int(os.environ.get('SAVE_TOTAL_LIMIT', 3))
+
     training_args = TrainingArguments(
         output_dir=output_dir,
-        learning_rate=1e-5,
-        per_device_train_batch_size=2,
-        per_device_eval_batch_size=2,
-        num_train_epochs=1,
+        learning_rate=learning_rate,
+        per_device_train_batch_size=per_device_train_batch_size,
+        per_device_eval_batch_size=per_device_eval_batch_size,
+        num_train_epochs=num_train_epochs,
         logging_dir=os.path.join(output_dir, "logs"),
+        logging_strategy=logging_strategy,
+        eval_strategy=eval_strategy,
+        save_strategy=save_strategy,
+        save_total_limit=save_total_limit,
+        fp16=False,
+        remove_unused_columns=False,
+        report_to="none",
     )
 
     # Initialize Trainer
@@ -78,9 +98,14 @@ def fine_tune_qwen3(dataset_path, model_name, output_dir):
         eval_dataset=tokenized_dataset['test'],
     )
 
-    # Train the model
+    # Train the model (support resume via RESUME_FROM env var)
     print("Starting training...")
-    trainer.train()
+    resume = os.environ.get('RESUME_FROM')
+    if resume:
+        print("Resuming from checkpoint:", resume)
+        trainer.train(resume_from_checkpoint=resume)
+    else:
+        trainer.train()
 
     # Save the model
     print("Saving fine-tuned model...")

@@ -23,9 +23,10 @@ def preprocess_dataset(input_path, output_path):
         print(f"Processing {len(data)} entries from dataset...")
 
         for item in data:
+            correctness = item.get('correctness', 'Model should check correctness, clarity, and concision.')
             entry = {
                 "prompt": f"{item['category']} Question: {item['question']}\nAnswer:",
-                "completion": f" {item['example_answer']}\nEvaluation: {item['correctness']}"
+                "completion": f" {item['example_answer']}\nEvaluation: {correctness}"
             }
             processed_data.append(entry)
 

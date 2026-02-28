@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>opedDev Prototype — Qwen3 WebDev</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    textarea { width: 100%; height: 180px; }
+    #output { white-space: pre-wrap; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background:#fafafa }
+    .small { font-size: 0.9em; color:#666 }
+  </style>
+</head>
+<body>
+  <h1>opedDev — Prototype Inference UI</h1>
+  <p class="small">Model path: <code>~/.openclaw/models/qwen3_webdev</code>. If model is not present yet, the app will try to load the base model from Hugging Face (may download large files).</p>
+  <label>Prompt</label>
+  <textarea id="prompt">### Problem: Write a Python function to add two numbers\n### Solution:\n</textarea>
+  <div style="margin-top:8px">
+    <label>Max new tokens: <input id="max_tokens" type="number" value="64" style="width:80px"/></label>
+    <label style="margin-left:12px">Temperature: <input id="temperature" type="number" value="0" step="0.1" style="width:70px"/></label>
+    <button id="btn" style="margin-left:12px">Generate</button>
+  </div>
+  <h3>Output</h3>
+  <div id="output">(no output yet)</div>
+  <script>
+    async function gen() {
+      const prompt = document.getElementById('prompt').value
+      const max_new_tokens = document.getElementById('max_tokens').value
+      const temperature = document.getElementById('temperature').value
+      const out = document.getElementById('output')
+      out.textContent = 'Generating...' 
+      try {
+        const resp = await fetch('/generate', {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({prompt, max_new_tokens, temperature})
+        })
+        const j = await resp.json()
+        if (resp.ok) out.textContent = j.generated
+        else out.textContent = 'ERROR: ' + JSON.stringify(j)
+      } catch(e) {
+        out.textContent = 'Request failed: '+e
+      }
+    }
+    document.getElementById('btn').onclick = gen
+  </script>
+</body>
+</html>

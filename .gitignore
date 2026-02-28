@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Hugging Face / model artifacts (large binary files)
+models/
+*.bin
+*.safetensors
+*.gguf
+*.ot
+*.pt
+*.pth
+
+# Dataset processed outputs and backups
+datasets/processed_*/
+datasets/*.bak*/
+datasets/incremental/
+
+# Logs
+logs/
+
+# Environment secrets
+.env
+*.env
+
+# Editor
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Misc
+*.egg-info/
+dist/
+build/

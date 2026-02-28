@@ -1,0 +1,375 @@
+[
+
+  {
+    "category": "HTML",
+    "question": "Create an accessible page layout with a navigation bar, main content, and footer for a portfolio site.",
+    "example_answer": "<nav aria-label=\"Primary navigation\">\n  <ul>\n    <li><a href=\"/#about\">About</a></li>\n    <li><a href=\"/#projects\">Projects</a></li>\n    <li><a href=\"/#contact\">Contact</a></li>\n  </ul>\n</nav>\n<main id=\"main\" role=\"main\">\n  <section id=\"projects\">...</section>\n</main>\n<footer>© 2026 Jane Developer</footer>",
+    "evaluation_criteria": [
+      { "aspect": "Semantic tags", "weight": 0.5 },
+      { "aspect": "Accessibility attributes", "weight": 0.3 },
+      { "aspect": "Proper structure", "weight": 0.2 }
+    ],
+    "correctness": "Uses semantic tags and ARIA where appropriate; structure is logical and navigable."
+  },
+
+  {
+    "category": "CSS",
+    "question": "Write a CSS rule to center a div both vertically and horizontally inside the viewport.",
+    "example_answer": ".center{display:flex;justify-content:center;align-items:center;height:100vh;}",
+    "evaluation_criteria": [
+      { "aspect": "Correct properties used", "weight": 0.6 },
+      { "aspect": "Cross-browser robustness", "weight": 0.2 },
+      { "aspect": "Simplicity", "weight": 0.2 }
+    ],
+    "correctness": "Flexbox centering is used correctly and is responsive."
+  },
+
+  {
+    "category": "JavaScript",
+    "question": "Write a function to reverse a UTF-8 string in JavaScript.",
+    "example_answer": "function reverseString(str){return Array.from(str).reverse().join('');}",
+    "evaluation_criteria": [
+      { "aspect": "Correctness", "weight": 0.6 },
+      { "aspect": "Handles multibyte chars", "weight": 0.25 },
+      { "aspect": "Readability", "weight": 0.15 }
+    ],
+    "correctness": "Correctly reverses characters including multi-byte unicode."
+  },
+
+  {
+    "category": "Node.js/Express",
+    "question": "Create a basic Express server that listens on port 3000 and responds with JSON {message: 'Hello'} on the root route.",
+    "example_answer": "const express = require('express');\nconst app = express();\napp.get('/', (req, res) => res.json({message: 'Hello'}));\napp.listen(3000);",
+    "evaluation_criteria": [
+      { "aspect": "Server initialization", "weight": 0.5 },
+      { "aspect": "Response format", "weight": 0.3 },
+      { "aspect": "Port usage", "weight": 0.2 }
+    ],
+    "correctness": "Server starts and returns JSON on GET /."
+  },
+
+  {
+    "category": "React",
+    "question": "Create a functional React component that renders a button and logs 'Button Clicked!' when clicked.",
+    "example_answer": "import React from 'react';\nconst ButtonComponent = () => { const handleClick = () => console.log('Button Clicked!'); return <button onClick={handleClick}>Click Me</button>; };\nexport default ButtonComponent;",
+    "evaluation_criteria": [
+      { "aspect": "Event handling", "weight": 0.5 },
+      { "aspect": "Component structure", "weight": 0.3 },
+      { "aspect": "Readability", "weight": 0.2 }
+    ],
+    "correctness": "Button triggers console.log when clicked."
+  },
+
+  {
+    "category": "MySQL",
+    "question": "Write a MySQL query to retrieve the names and emails of employees with salary greater than 70000 from table 'employees'.",
+    "example_answer": "SELECT name, email FROM employees WHERE salary > 70000;",
+    "evaluation_criteria": [
+      { "aspect": "Query syntax", "weight": 0.5 },
+      { "aspect": "Correct columns returned", "weight": 0.3 },
+      { "aspect": "Use of WHERE clause", "weight": 0.2 }
+    ],
+    "correctness": "Returns correct rows and columns for the condition."
+  },
+
+  {
+    "category": "HTML",
+    "question": "Create a contact form with labels, name and email fields, and a submit button. Ensure fields are required.",
+    "example_answer": "<form action=\"/contact\" method=\"post\">\n  <label for=\"name\">Name</label>\n  <input id=\"name\" name=\"name\" required>\n  <label for=\"email\">Email</label>\n  <input id=\"email\" name=\"email\" type=\"email\" required>\n  <button type=\"submit\">Send</button>\n</form>",
+    "evaluation_criteria": [
+      { "aspect": "Form semantics", "weight": 0.4 },
+      { "aspect": "Validation attributes", "weight": 0.4 },
+      { "aspect": "Accessibility", "weight": 0.2 }
+    ],
+    "correctness": "Form uses labels and required attributes correctly."
+  },
+
+  {
+    "category": "CSS",
+    "question": "Create a responsive two-column layout with a 250px sidebar and flexible content area, collapsing to one column on narrow screens.",
+    "example_answer": ".layout{display:grid;grid-template-columns:250px 1fr;gap:16px;}@media(max-width:700px){.layout{grid-template-columns:1fr}}",
+    "evaluation_criteria": [
+      { "aspect": "Grid usage", "weight": 0.5 },
+      { "aspect": "Responsive breakpoint", "weight": 0.3 },
+      { "aspect": "Simplicity", "weight": 0.2 }
+    ],
+    "correctness": "Layout uses grid and a media query for responsiveness."
+  },
+
+  {
+    "category": "JavaScript",
+    "question": "Write a debounce utility that delays function execution by 300ms.",
+    "example_answer": "function debounce(fn, ms=300){let t;return (...args)=>{clearTimeout(t);t=setTimeout(()=>fn(...args), ms);};}",
+    "evaluation_criteria": [
+      { "aspect": "Correct timeout handling", "weight": 0.5 },
+      { "aspect": "Memory leaks avoided", "weight": 0.25 },
+      { "aspect": "API clarity", "weight": 0.25 }
+    ],
+    "correctness": "Subsequent calls reset timer; function invoked only after idle period."
+  },
+
+  {
+    "category": "Node.js/Express",
+    "question": "Implement middleware that logs the HTTP method and URL for each request.",
+    "example_answer": "app.use((req,res,next)=>{console.log(`${req.method} ${req.url}`);next();});",
+    "evaluation_criteria": [
+      { "aspect": "Middleware signature", "weight": 0.5 },
+      { "aspect": "Logging content", "weight": 0.3 },
+      { "aspect": "Non-blocking behavior", "weight": 0.2 }
+    ],
+    "correctness": "Logs method and URL and calls next()."
+  },
+
+  {
+    "category": "React",
+    "question": "Create a controlled input component that stores the value in state and shows the value below the input.",
+    "example_answer": "function NameForm(){const [name,setName]=useState('');return (<div><input value={name} onChange={e=>setName(e.target.value)} /><p>{name}</p></div>);} ",
+    "evaluation_criteria": [
+      { "aspect": "useState usage", "weight": 0.5 },
+      { "aspect": "Controlled input behavior", "weight": 0.3 },
+      { "aspect": "Render correctness", "weight": 0.2 }
+    ],
+    "correctness": "Input updates state and displayed value synchronously."
+  },
+
+  {
+    "category": "MySQL",
+    "question": "Create a 'products' table with id (PK), name, and price columns.",
+    "example_answer": "CREATE TABLE products (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, price DECIMAL(10,2) NOT NULL);",
+    "evaluation_criteria": [
+      { "aspect": "DDL correctness", "weight": 0.6 },
+      { "aspect": "Constraints usage", "weight": 0.25 },
+      { "aspect": "Data types selection", "weight": 0.15 }
+    ],
+    "correctness": "Table created with appropriate types and primary key."
+  },
+
+  {
+    "category": "HTML",
+    "question": "Insert an image with proper alt text and responsive styling.",
+    "example_answer": "<img src=\"/images/team.jpg\" alt=\"Engineering team standing in front of office\" style=\"max-width:100%;height:auto;\">",
+    "evaluation_criteria": [
+      { "aspect": "Alt text quality", "weight": 0.5 },
+      { "aspect": "Responsive attributes", "weight": 0.3 },
+      { "aspect": "Proper src usage", "weight": 0.2 }
+    ],
+    "correctness": "Image is accessible and scales with container."
+  },
+
+  {
+    "category": "CSS",
+    "question": "Style a primary button with accessible color contrast, hover state, and transition.",
+    "example_answer": ".btn-primary{background:#0d6efd;color:#fff;padding:.5rem 1rem;border-radius:6px;transition:background .15s;} .btn-primary:hover{background:#0b5ed7}",
+    "evaluation_criteria": [
+      { "aspect": "Contrast and colors", "weight": 0.4 },
+      { "aspect": "Interaction states", "weight": 0.35 },
+      { "aspect": "Simplicity", "weight": 0.25 }
+    ],
+    "correctness": "Button is styled with hover and transition for better UX."
+  },
+
+  {
+    "category": "JavaScript",
+    "question": "Write a function to fetch JSON from a URL and handle non-2xx responses.",
+    "example_answer": "async function getJson(url){const res = await fetch(url); if(!res.ok) throw new Error(`HTTP ${res.status}`); return res.json();}",
+    "evaluation_criteria": [
+      { "aspect": "Error handling", "weight": 0.5 },
+      { "aspect": "Async/await use", "weight": 0.3 },
+      { "aspect": "Readability", "weight": 0.2 }
+    ],
+    "correctness": "Throws for non-ok responses and returns parsed JSON otherwise."
+  },
+
+  {
+    "category": "Node.js/Express",
+    "question": "Add JSON body parsing and a POST /notes endpoint that echoes the submitted body.",
+    "example_answer": "app.use(express.json()); app.post('/notes',(req,res)=>{res.status(201).json(req.body);});",
+    "evaluation_criteria": [
+      { "aspect": "Body parsing setup", "weight": 0.4 },
+      { "aspect": "Status code usage", "weight": 0.3 },
+      { "aspect": "Response shape", "weight": 0.3 }
+    ],
+    "correctness": "Endpoint echoes JSON with 201 status."
+  },
+
+  {
+    "category": "React",
+    "question": "Use useEffect to fetch items on mount and store them in state, guarding against unmounted updates.",
+    "example_answer": "useEffect(()=>{let mounted=true;fetch('/api/items').then(r=>r.json()).then(data=>{if(mounted)setItems(data)});return ()=>{mounted=false}},[]);",
+    "evaluation_criteria": [
+      { "aspect": "Effect dependency use", "weight": 0.4 },
+      { "aspect": "Unmount guard", "weight": 0.35 },
+      { "aspect": "Data handling", "weight": 0.25 }
+    ],
+    "correctness": "Fetch runs once and avoids state update after unmount."
+  },
+
+  {
+    "category": "MySQL",
+    "question": "Write a query to join orders and customers returning customer name and order total for orders > 100.",
+    "example_answer": "SELECT c.name, o.total FROM orders o JOIN customers c ON o.customer_id = c.id WHERE o.total > 100;",
+    "evaluation_criteria": [
+      { "aspect": "JOIN correctness", "weight": 0.5 },
+      { "aspect": "Filter condition", "weight": 0.3 },
+      { "aspect": "Column selection", "weight": 0.2 }
+    ],
+    "correctness": "Returns customer names and totals for matching orders."
+  },
+
+  {
+    "category": "HTML",
+    "question": "Mark up a blog article with title, author, published date, and content using semantic elements.",
+    "example_answer": "<article>\n  <h1>How I built X</h1>\n  <p class=\"byline\">By <span class=\"author\">Alex</span> — <time datetime=\"2026-02-01\">Feb 1, 2026</time></p>\n  <div class=\"content\">...</div>\n</article>",
+    "evaluation_criteria": [
+      { "aspect": "Semantic tags", "weight": 0.5 },
+      { "aspect": "Time element use", "weight": 0.3 },
+      { "aspect": "Structure", "weight": 0.2 }
+    ],
+    "correctness": "Article uses <article> and <time> appropriately."
+  },
+
+  {
+    "category": "CSS",
+    "question": "Truncate long text in a single line with an ellipsis.",
+    "example_answer": ".truncate{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}",
+    "evaluation_criteria": [
+      { "aspect": "Correct properties", "weight": 0.6 },
+      { "aspect": "Browser compatibility note", "weight": 0.2 },
+      { "aspect": "Simplicity", "weight": 0.2 }
+    ],
+    "correctness": "Text is truncated with an ellipsis when it overflows."
+  },
+
+  {
+    "category": "JavaScript",
+    "question": "Write a small helper to deep-clone an object that is JSON-safe.",
+    "example_answer": "const clone = obj => JSON.parse(JSON.stringify(obj));",
+    "evaluation_criteria": [
+      { "aspect": "Correctness for JSON-safe objects", "weight": 0.6 },
+      { "aspect": "Simplicity", "weight": 0.25 },
+      { "aspect": "Caveats listed", "weight": 0.15 }
+    ],
+    "correctness": "Performs deep clone for objects without functions or special types."
+  },
+
+  {
+    "category": "Node.js/Express",
+    "question": "Serve static files from a 'public' directory under the app root.",
+    "example_answer": "app.use(express.static('public'));",
+    "evaluation_criteria": [
+      { "aspect": "Correct middleware use", "weight": 0.6 },
+      { "aspect": "Security considerations", "weight": 0.2 },
+      { "aspect": "Simplicity", "weight": 0.2 }
+    ],
+    "correctness": "Files in public/ are served at their relative paths."
+  },
+
+  {
+    "category": "React",
+    "question": "Use useRef to focus an input when a component mounts.",
+    "example_answer": "const ref = useRef(null);useEffect(()=>{ref.current && ref.current.focus()},[]);return <input ref={ref} />;",
+    "evaluation_criteria": [
+      { "aspect": "useRef usage", "weight": 0.5 },
+      { "aspect": "Effect hook correctness", "weight": 0.3 },
+      { "aspect": "Practical result", "weight": 0.2 }
+    ],
+    "correctness": "Input receives focus on mount."
+  },
+
+  {
+    "category": "MySQL",
+    "question": "Count the number of products per category in 'products' table.",
+    "example_answer": "SELECT category, COUNT(*) AS cnt FROM products GROUP BY category;",
+    "evaluation_criteria": [
+      { "aspect": "GROUP BY use", "weight": 0.5 },
+      { "aspect": "Aggregate correctness", "weight": 0.3 },
+      { "aspect": "Result labeling", "weight": 0.2 }
+    ],
+    "correctness": "Returns counts grouped by category."
+  },
+
+  {
+    "category": "HTML",
+    "question": "Embed a responsive YouTube video iframe preserving 16:9 aspect ratio.",
+    "example_answer": "<div style=\"position:relative;padding-bottom:56.25%;height:0;\">\n  <iframe src=\"https://www.youtube.com/embed/abc123\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Demo video\"></iframe>\n</div>",
+    "evaluation_criteria": [
+      { "aspect": "Responsive aspect ratio", "weight": 0.5 },
+      { "aspect": "Accessibility (title)", "weight": 0.3 },
+      { "aspect": "Correct iframe usage", "weight": 0.2 }
+    ],
+    "correctness": "Iframe scales to container while keeping 16:9 ratio."
+  },
+
+  {
+    "category": "CSS",
+    "question": "Create a card component with rounded corners and subtle shadow.",
+    "example_answer": ".card{background:#fff;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.08);padding:16px}",
+    "evaluation_criteria": [
+      { "aspect": "Visual hierarchy", "weight": 0.5 },
+      { "aspect": "Spacing and radius", "weight": 0.3 },
+      { "aspect": "Simplicity", "weight": 0.2 }
+    ],
+    "correctness": "Card uses radius and shadow for separation from background."
+  },
+
+  {
+    "category": "JavaScript",
+    "question": "Use event delegation to handle clicks on list items within a UL.",
+    "example_answer": "const ul = document.querySelector('ul'); ul.addEventListener('click', e => { const li = e.target.closest('li'); if (li) console.log(li.dataset.id); });",
+    "evaluation_criteria": [
+      { "aspect": "Delegation correctness", "weight": 0.5 },
+      { "aspect": "Closest usage", "weight": 0.3 },
+      { "aspect": "Performance benefits", "weight": 0.2 }
+    ],
+    "correctness": "Click on any descendant element finds the parent li and handles it."
+  },
+
+  {
+    "category": "Node.js/Express",
+    "question": "Implement error-handling middleware that returns JSON with the error message.",
+    "example_answer": "app.use((err, req, res, next) => { console.error(err); res.status(500).json({ error: err.message }); });",
+    "evaluation_criteria": [
+      { "aspect": "Error handler signature", "weight": 0.5 },
+      { "aspect": "Logging", "weight": 0.25 },
+      { "aspect": "JSON response format", "weight": 0.25 }
+    ],
+    "correctness": "Middleware handles errors and responds with JSON and 500 status."
+  },
+
+  {
+    "category": "React",
+    "question": "Create a custom hook `useFetch(url)` that returns `{data, loading, error}`.",
+    "example_answer": "function useFetch(url){const [state,setState]=useState({data:null,loading:true,error:null});useEffect(()=>{let mounted=true;fetch(url).then(r=>r.json()).then(data=>mounted&&setState({data,loading:false,error:null})).catch(error=>mounted&&setState({data:null,loading:false,error}));return ()=>mounted=false},[url]);return state}",
+    "evaluation_criteria": [
+      { "aspect": "Hook API", "weight": 0.4 },
+      { "aspect": "Cleanup on unmount", "weight": 0.35 },
+      { "aspect": "Error handling", "weight": 0.25 }
+    ],
+    "correctness": "Hook returns state and avoids updates after unmount."
+  },
+
+  {
+    "category": "MySQL",
+    "question": "Add an index on the email column of 'users' table to speed lookups.",
+    "example_answer": "CREATE INDEX idx_users_email ON users(email);",
+    "evaluation_criteria": [
+      { "aspect": "Syntax correctness", "weight": 0.6 },
+      { "aspect": "Index naming", "weight": 0.2 },
+      { "aspect": "Appropriate column", "weight": 0.2 }
+    ],
+    "correctness": "Creates an index on email for faster WHERE queries."
+  },
+
+  {
+    "category": "HTML",
+    "question": "Link an external stylesheet and a favicon in the document head.",
+    "example_answer": "<link rel=\"stylesheet\" href=\"/css/site.css\">\n<link rel=\"icon\" href=\"/favicon.ico\">",
+    "evaluation_criteria": [
+      { "aspect": "Correct link rels", "weight": 0.6 },
+      { "aspect": "Path correctness", "weight": 0.2 },
+      { "aspect": "Placement in head", "weight": 0.2 }
+    ],
+    "correctness": "Both stylesheet and favicon are linked properly."
+  }
+
+]
