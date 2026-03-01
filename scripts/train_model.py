@@ -2,6 +2,7 @@
 # Fine-tunes the Qwen-3 0.6B model for web development coding interview grading.
 
 import logging
+import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer
 from datasets import load_from_disk
 import os
@@ -23,38 +24,41 @@ def fine_tune_qwen3(dataset_path, model_name, output_dir):
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    # Load model with device mapping if possible
-    import torch
-    try:
-        dtype = torch.float16 if torch.cuda.is_available() else None
-    except Exception:
-        dtype = None
+    dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
-    model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True, device_map='auto', torch_dtype=dtype)
-    try:
-        model.resize_token_embeddings(len(tokenizer))
-    except Exception:
-        pass
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name, trust_remote_code=True, device_map='auto', torch_dtype=dtype
+    )
+    # Resize embeddings to cover all special tokens (prevents out-of-vocab NaN)
+    model.resize_token_embeddings(len(tokenizer))
 
     # Tokenize the dataset
+    MAX_LEN = 512  # bumped from 256 — Qwen answers can be long
     print("Tokenizing dataset...")
     def preprocess_function(examples):
         prompts = examples['prompt']
         completions = examples['completion']
-        # tokenize prompts without special tokens to get prompt lengths
+
+        # Tokenize full sequences
+        full_texts = [p + c + tokenizer.eos_token for p, c in zip(prompts, completions)]
+        tokenized_full = tokenizer(
+            full_texts,
+            padding='max_length',
+            truncation=True,
+            max_length=MAX_LEN,
+        )
+
+        # Tokenize prompts-only to get prompt lengths for label masking
         tokenized_prompts = tokenizer(prompts, add_special_tokens=False)
-        # tokenize full input (prompt + completion) with padding/truncation
-        full_texts = [p + c for p, c in zip(prompts, completions)]
-        tokenized_full = tokenizer(full_texts, padding='max_length', truncation=True, max_length=256)
 
         labels = []
         for i in range(len(tokenized_full['input_ids'])):
             input_ids = tokenized_full['input_ids'][i]
             prompt_len = len(tokenized_prompts['input_ids'][i])
-            lab = input_ids.copy()
-            # mask prompt tokens
-            for j in range(prompt_len):
-                if j < len(lab):
+            lab = list(input_ids)
+            # Mask prompt tokens and padding tokens from loss
+            for j in range(len(lab)):
+                if j < prompt_len or lab[j] == tokenizer.pad_token_id:
                     lab[j] = -100
             labels.append(lab)
 
@@ -64,7 +68,7 @@ def fine_tune_qwen3(dataset_path, model_name, output_dir):
     tokenized_dataset = dataset.map(preprocess_function, batched=True, remove_columns=['prompt', 'completion'], load_from_cache_file=False)
 
     # Define training parameters (use env vars or defaults)
-    learning_rate = float(os.environ.get('LEARNING_RATE', 2e-5))
+    learning_rate = float(os.environ.get('LEARNING_RATE', 5e-5))
     per_device_train_batch_size = int(os.environ.get('PER_DEVICE_TRAIN_BATCH_SIZE', 2))
     per_device_eval_batch_size = int(os.environ.get('PER_DEVICE_EVAL_BATCH_SIZE', 2))
     num_train_epochs = int(os.environ.get('NUM_TRAIN_EPOCHS', 3))
@@ -85,6 +89,9 @@ def fine_tune_qwen3(dataset_path, model_name, output_dir):
         save_strategy=save_strategy,
         save_total_limit=save_total_limit,
         fp16=False,
+        bf16=torch.cuda.is_available(),  # use bfloat16 on GPU — more stable than fp16
+        max_grad_norm=1.0,               # gradient clipping — prevents NaN explosions
+        warmup_ratio=0.1,                # warmup 10% of steps — stabilizes early training
         remove_unused_columns=False,
         report_to="none",
     )
